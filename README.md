@@ -40,3 +40,9 @@ analysis-network-attacks.md é a análise/solução propriamente dita: usa a evi
 ## Aviso
 
 Este projeto é baseado em um cenário educacional (adaptado do Google Cybersecurity Certificate) e tem finalidade exclusivamente de portfólio/estudo.
+
+## Autoria
+
+querycat — em transição de carreira de desenvolvimento de software para cibersegurança, com foco em unir experiência em pagamentos e antifraude ao conhecimento de segurança.
+
+[GitHub](https://github.com/querycat) · [LinkedIn](https://github.com/querycat)
