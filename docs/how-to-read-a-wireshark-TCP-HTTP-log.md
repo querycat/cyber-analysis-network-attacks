@@ -4,7 +4,7 @@ Nesta leitura, você aprenderá como ler um log TCP/HTTP do Wireshark para o tr�
 
 ## Número da entrada do log e tempo
 
-| No. | Time     |
+| No. | Tempo     |
 |------|----------|
 | 47   | 3.144521 |
 | 48   | 3.195755 |
@@ -46,7 +46,7 @@ Os próximos itens na coluna Info fornecem mais detalhes sobre os pacotes. No en
 
 Uma transação normal entre um visitante do site e o servidor web seria assim:
 
-| No. | Time     | Source        | Destination   | Protocol | Info                              |
+| No. | Tempo     | Origem        | Destino   | Protocolo | Info                              |
 |------|----------|---------------|---------------|----------|----------------------------------|
 | 47   | 3.144521 | 198.51.100.23 | 192.0.2.1     | TCP      | 42584->443 [SYN] Seq=0 Win=5792 Len=120... |
 | 48   | 3.195755 | 192.0.2.1     | 198.51.100.23 | TCP      | 443->42584 [SYN, ACK] Seq=0 Win-5792 Len=120... |
@@ -68,7 +68,7 @@ Um ataque DoS direto origina-se de uma única fonte. Um ataque distribuído de n
 
 Existem duas abas na parte inferior do arquivo de log. Uma delas está rotulada como “Color coded TCP log” (Log TCP codificado por cores). Se você clicar nessa aba, encontrará as interações do servidor com o endereço IP do atacante (203.0.113.0) marcadas com destaque vermelho (e a palavra “red” na coluna A).
 
-| Cor   | No. | Time     | Origem       | Destino      | Protocolo | Info                              |
+| Cor   | No. | Tempo     | Origem       | Destino      | Protocolo | Info                              |
 |-------|------|----------|--------------|--------------|-----------|----------------------------------|
 | red   | 52   | 3.390692 | 203.0.113.0  | 192.0.2.1    | TCP       | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | red   | 53   | 3.441926 | 192.0.2.1    | 203.0.113.0  | TCP       | 443->54770 [SYN, ACK] Seq=0 Win-5792 Len=120... |
@@ -86,7 +86,7 @@ Inicialmente, a solicitação SYN do atacante é respondida normalmente pelo ser
 
 Um visitante funcionário com o endereço IP 198.51.100.14 completa com sucesso o handshake SYN/ACK com o servidor web (itens do log 55, 56, 58). Em seguida, o navegador do funcionário solicita a página sales.html com o comando GET e o servidor responde (itens do log 60 e 62).
 
-| Cor   | No. | Time     | Origem       | Destino      | Protocolo | Info                              |
+| Cor   | No. | Tempo     | Origem       | Destino      | Protocolo | Info                              |
 |-------|------|----------|--------------|--------------|-----------|----------------------------------|
 | green | 63   | 4.097363 | 198.51.100.5 | 192.0.2.1    | TCP       | 33638->443 [SYN] Seq=0 Win-5792 Len=120... |
 | red   | 64   | 4.176295 | 192.0.2.1    | 203.0.113.0  | TCP       | 443->54770 [SYN, ACK] Seq=0 Win-5792 Len=120... |
@@ -119,7 +119,7 @@ Nas próximas 20 linhas, o log começa a refletir a dificuldade que o servidor w
 
 ### Exemplo de entradas do log:
 
-| Cor    | No.  | Time      | Origem       | Destino      | Protocolo | Info                              |
+| Cor    | No.  | Tempo      | Origem       | Destino      | Protocolo | Info                              |
 |--------|-------|-----------|--------------|--------------|-----------|----------------------------------|
 | red    | 119   | 19.198705 | 203.0.113.0  | 192.0.2.1    | TCP       | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | red    | 120   | 19.521718 | 203.0.113.0  | 192.0.2.1    | TCP       | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
