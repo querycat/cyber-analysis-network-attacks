@@ -20,8 +20,8 @@ Os arquivos foram organizados para reproduzir o raciocínio investigativo: prime
 |---|---|---|
 | 1     | [`how-to-read-a-wireshark-TCP-HTTP-log.md`](docs/how-to-read-a-wireshark-TCP-HTTP-log.md) | Guia de referência para interpretar os campos e padrões de um log do Wireshark capturando tráfego TCP/HTTP — necessário antes de examinar o log real. |
 | 2 | [`wireshark-TCP-HTTP-log.xlsx`](docs/wireshark-TCP-HTTP-log.xlsx) | A evidência bruta: o log de pacotes capturado durante o incidente, mostrando o volume anômalo de requisições SYN. |
-| 3 | `analysis-network-attacs.md` | Análise e solução do cenário: a partir da evidência do log, identifica o tipo de ataque de rede envolvido (TCP SYN flood) e explica como ele ocorreu e qual foi seu impacto negativo no site.
-| 4 | `cybersecurity-incident-report.md` | Relatório final do incidente, consolidando a análise, a causa identificada, o impacto no negócio e as recomendações para a gestão.
+| 3 | [`analysis-network-attacs.md`](result/analysis-network-attacs.md) | Análise e solução do cenário: a partir da evidência do log, identifica o tipo de ataque de rede envolvido (TCP SYN flood) e explica como ele ocorreu e qual foi seu impacto negativo no site.
+| 4 | [`cybersecurity-incident-report.md`](result/cybersecurity-incident-report.md) | Relatório final do incidente, consolidando a análise, a causa identificada, o impacto no negócio e as recomendações para a gestão.
 
 ## Por que essa ordem?
 
