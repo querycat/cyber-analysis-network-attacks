@@ -14,6 +14,16 @@ Como medidas imediatas, o servidor foi colocado temporariamente offline para rec
 
 ## Estrutura do repositório e ordem de leitura sugerida
 
+```
+├── README.md
+├── docs/
+    ├── how-to-read-a-wireshark-TCP-HTTP-log.md
+│   └── wireshark-TCP-HTTP-log.xlsx
+└── result/
+    ├── analysis-network-attacks.md
+    └── cybersecurity-incident-report.md
+```
+
 Os arquivos foram organizados para reproduzir o raciocínio investigativo: primeiro adquirir a capacidade de ler a evidência, depois examinar a evidência bruta, em seguida interpretá-la para identificar a causa e o impacto do ataque e, por fim, consolidar tudo em um relatório final voltado à gestão.
 
 | Ordem | Arquivo | Propósito |
